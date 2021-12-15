@@ -19,6 +19,45 @@ void Fidelisation(CLT comptes[], int n);
 void TrieDescendant(CLT comptes[], int n);
 void *Depot(CLT comptes[], int n, float Depot, char *cin);
 void Affichage(CLT comptes[], int n);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="logo.png" alt="">
+
+    <div class="safia">
+        <form action="">
+            <div class="sofia">
+                <h2>S'identifier</h2>
+                <input type="email" placeholder="E-mail ou N° de téléphone">
+
+                <input type="password" placeholder="Mot de passe">
+
+                <button>S'identifier</button>
+            
+                <div id="line">
+                    <input type="checkbox">
+                    <label for="">Se souvenir de moi</label>
+                    <a href="https://www.netflix.com/ma-fr/LoginHelp">Besoin d'aide ?</a>
+                </div>
+            
+                <div>
+                    <img id="logoFace" src="logoFace.png" alt="">
+                    <a href="https://web.facebook.com/login.php?skip_api_login=1&api_key=163114453728333&kid_directed_site=0&app_id=163114453728333&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fapp_id%3D163114453728333%26cbt%3D1639300821558%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df25973a5cc8a288%2526domain%253Dwww.netflix.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.netflix.com%25252Ff2e4ed06a9e3d64%2526relation%253Dopener%26client_id%3D163114453728333%26display%3Dpopup%26domain%3Dwww.netflix.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.netflix.com%252Fma-fr%252Flogin%26locale%3Den_US%26logger_id%3Df2850b60571248c%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dfed4ac2660c99c%2526domain%253Dwww.netflix.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.netflix.com%25252Ff2e4ed06a9e3d64%2526relation%253Dopener%2526frame%253Df1f5c412e598d08%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv2.9%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfed4ac2660c99c%26domain%3Dwww.netflix.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.netflix.com%252Ff2e4ed06a9e3d64%26relation%3Dopener%26frame%3Df1f5c412e598d08%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=fr_FR&pl_dbl=0&_rdc=1&_rdr">S'identifier avec Facebook</a>
+                </div>
+            </div>
+        </form>   
+    </div>
+    
+
+</body>
+</html>
 void TrieAscendant(CLT comptes[], int n);
 void createanaccount(CLT comptes[], int n);
 char *search(CLT comptes[], int n, char *cin);
@@ -317,30 +356,7 @@ back:
 }
 
 
-void createanaccount(CLT comptes[], int n)
-{
-    int i;
-    for (i = 0; i < n; i++)
-    {
-       
-        printf(" \n\n\nEntrer CIN : \t ");
-        scanf("%s", comptes[i].CIN);
-        printf("Entrer le Nom  : \t ");
-        scanf("%s", comptes[i].Nom);
-        printf("Entrer le Prenom : \t ");
-        scanf("%s", comptes[i].Prenom);
-        printf("Entrer Montant : \t ");
-        scanf("%f", &comptes[i].Montant);
-        
-    }
-}
-void Affichage(CLT comptes[], int n)
-{
-    int i;
-    for (i = 0; i < n; i++)
-    {
-        
-        printf("- CIN : %s \n ", comptes[i].CIN);
+void createanacco
 
         printf("- le Nom %s  : \n ", comptes[i].Nom);
 
